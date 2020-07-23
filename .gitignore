@@ -1,0 +1,10 @@
+Course Assets
+/Reactivities/.vs/Reactivities
+/Reactivities/API/obj
+/Reactivities/Application/obj
+/Reactivities/Domain/obj
+/Reactivities/Persistence/obj
+/Reactivities/API/bin/Debug/netcoreapp3.0
+/Reactivities/Application/bin/Debug/netstandard2.0
+/Reactivities/Domain/bin/Debug/netstandard2.0
+/Reactivities/Persistence/bin/Debug/netstandard2.0
