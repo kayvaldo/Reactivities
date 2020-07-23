@@ -8,3 +8,5 @@ Course Assets
 /Reactivities/Application/bin/Debug/netstandard2.0
 /Reactivities/Domain/bin/Debug/netstandard2.0
 /Reactivities/Persistence/bin/Debug/netstandard2.0
+/Reactivities/Application/bin/Debug/netcoreapp3.0
+/Reactivities/Persistence/bin/Debug/netcoreapp3.0
