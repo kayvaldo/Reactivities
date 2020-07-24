@@ -24,6 +24,7 @@ namespace API
                 {
                     var dataContext = scope.ServiceProvider.GetRequiredService<DataContext>();
                     dataContext.Database.Migrate();
+                    DbInitializer.Seed(dataContext);
                 }
                 catch (Exception exception)
                 {
