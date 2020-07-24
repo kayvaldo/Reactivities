@@ -13,3 +13,5 @@ Course Assets
 /Reactivities/Persistence/bin/Debug/netstandard2.1
 /Reactivities/.idea
 /Reactivities/react-client/.vs/react-client/v16
+Reactivities/API/API.csproj.user
+Reactivities/react-client/.vs/slnx.sqlite
