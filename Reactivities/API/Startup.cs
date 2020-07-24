@@ -32,6 +32,10 @@ namespace API
 
             services.AddControllers();
             services.AddCors(setup => setup.AddPolicy("AllowAnyOrigin", policy => policy.AllowAnyOrigin()));
+            services.AddCors(
+                setup => setup.AddPolicy(
+                    "AllowAllForLocal",
+                    policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:44307")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,7 +53,7 @@ namespace API
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => endpoints.MapControllers());
-            app.UseCors("AllowAnyOrigin");
+            app.UseCors("AllowAllForLocal");
         }
     }
 }
