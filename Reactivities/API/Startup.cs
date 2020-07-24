@@ -31,6 +31,7 @@ namespace API
                 options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
 
             services.AddControllers();
+            services.AddCors(setup => setup.AddPolicy("AllowAnyOrigin", policy => policy.AllowAnyOrigin()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +49,7 @@ namespace API
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => endpoints.MapControllers());
+            app.UseCors("AllowAnyOrigin");
         }
     }
 }
